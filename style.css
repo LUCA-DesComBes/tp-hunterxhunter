@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+	font-family: "Kavivanar", cursive;
+}
+body {
+	padding: 3.688rem 2.438rem;
+}
+h1 {
+	font-size: 38px;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 7%;
+}
+hr {
+	height: 9px;
+	border-radius: 99px;
+	background-color: #343434;
+	margin-bottom: 5.25rem;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3.625rem;
+}
+article {
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	border-radius: 12px;
+	padding: 9px;
+	width: 297px;
+}
+.head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #d9d9d9;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.border-dashed {
+	border: dashed 9px #000;
+	padding: 0 4px;
+	text-align: center;
+}
+.middle {
+	padding: 6px 6px 0 6px;
+	background-color: #d9d9d9;
+	margin-bottom: 8px;
+}
+img {
+	width: 100%;
+}
+.foot {
+	background: linear-gradient(
+		0.25turn,
+		#0015ff,
+		#0084a8,
+		#000000,
+		#0015ff,
+		#0015ff,
+		#000000,
+		#0084a8,
+		#0015ff
+	);
+	padding: 4px 6px;
+	height: 100%;
+}
+.text-area {
+	background-color: #d9d9d9;
+	padding: 6px 6px 2rem 6px;
+	border: 10px #000 solid;
+	border-radius: 12px;
+	height: 100%;
+}
+.text-area-para {
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 7%;
+}
+.title {
+	font-size: 11px;
+	font-weight: 400;
+}
+
+@media screen and (min-width: 376px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
